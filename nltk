@@ -5,6 +5,5 @@ wordlist
 stopwords
 punkt
 porterstemmer
-averaged_perceptron_tagger
-conll2000
+
 
