@@ -4,7 +4,6 @@ reuters
 wordlist
 stopwords
 punkt
-porterstemmer
-averaged_perceptron_tagger
+stem
 word_tokenize
 
