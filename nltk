@@ -2,5 +2,5 @@ wordnet
 pros_cons
 reuters
 wordlist
-util
-tokenize
+Stopwords
+Punkt
