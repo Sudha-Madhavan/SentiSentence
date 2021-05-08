@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sentence Checker and Sentiment Analysis</title>
+
+    <style type ='text/css'>
+
+        body {
+          background-image: url('http://images.unsplash.com/photo-1581431886211-6b932f8367f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8MXx8bm90ZWJvb2t8fDB8fHx8MTYxOTk1NzE2NQ&ixlib=rb-1.2.1&q=80&w=1080');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+        .wavy{
+            position:relative;
+            font-family: Arial, Helvetica, sans-serif;
+            -webkit-box-reflect:below -12px linear-gradient(transparent,rgba(0,0,0,0.2));
+            word-spacing: 15px;
+
+            }
+        .wavy span{
+            position: relative;
+            display: inline-block;
+
+            color: rgb(17, 16, 16);
+            font-size: 1.5em;
+            text-transform: uppercase;
+            animation:animate 1s ease-in-out infinite;
+            animation-delay: calc(0.1s * var(--i));
+
+        }
+        @keyframes animate{
+            0%
+            {
+                transform:translateY(0px) ;
+            }
+            20%
+            {
+                transform:translateY(-20px) ;
+            }
+            40%,100%
+            {
+                transform:translateY(0px) ;
+            }
+
+        }
+        .comment {
+        width: 40%;
+        height: 100px;
+        padding: 10px;
+        border: 3px dashed #020d14;
+        background-color: #d9e2e6;
+        font: 1.4em/1.6em cursive;
+        text-align: left;
+      }
+      .button {
+            border-radius: 4px;
+            background-color: #146105;
+             border: none;
+            color: #FFFFFF;
+            text-align: center;
+            font-size: 28px;
+            padding: 20px;
+            width: 150px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .button span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+        }
+
+        .button span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+         }
+
+        .button:hover span {
+            padding-right: 25px;
+        }
+
+        .button:hover span:after {
+        opacity: 1;
+        right: 0;
+        }
+        #header1 img {
+            position: absolute;
+            right: -10px;
+            bottom: 0;
+            }
+</style>
+</head>
+<body >
+    <div align="center">
+
+        <br><br>
+        <form action="/success" method="post" enctype="multipart/form-data">
+            <div class="wavy">
+               <span style="--i:1;">E</span>
+               <span style="--i:2;">n</span>
+               <span style="--i:3;">t</span>
+               <span style="--i:4;">e</span>
+
+               <span style="--i:5;">r</span>
+               <span style="--i:6;">y</span>
+               <span style="--i:7;">o</span>
+               <span style="--i:8;">u</span>
+               <span style="--i:9;">r</span>
+               <span style="--i:10;">t</span>
+               <span style="--i:11;">e</span>
+               <span style="--i:12;">x</span>
+               <span style="--i:13;">t</span>
+               <span style="--i:14;">h</span>
+               <span style="--i:15;">e</span>
+               <span style="--i:16;">r</span>
+               <span style="--i:17;">e</span>
+            </div>
+
+            <br><br>
+            <textarea class="comment" name="inp"></textarea>
+            <br><br>
+            <button class="button"><span>Check </span></button>/
+        </form>
+        <div class="header">
+            <img src="static/logo.ico" alt="logo"/>
+        </div>
+    </div>
+</body>
+</html>
