@@ -2,5 +2,10 @@ wordnet
 pros_cons
 reuters
 wordlist
-Stopwords
-Punkt
+stopwords
+punkt
+porterstemmer
+word_tokenize
+ngrams
+wordnetlemmatizer
+wordpunkttokenizer
