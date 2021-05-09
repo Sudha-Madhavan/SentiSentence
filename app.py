@@ -19,7 +19,7 @@ def success():
 
 @app.route("/spellcheck")
 def check():
-    tool = language_tool_python.LanguageTool('en-US')
+    tool = language_tool_python.LanguageToolPublicAPI('en-US')
     matches = tool.check(st)
     res = ' '.join(map(str, matches))
     result = "Spellcheck Results : "
