@@ -35,7 +35,7 @@ def check():
 def senti():
     text = TextBlob(st)
     if text.sentiment[0] > 0:
-        output = "Postitive Emotion"
+        output = "Positive Emotion"
     elif text.sentiment[0] < 0:
         output = "Negative Emotion"
     elif text.sentiment[0] == 0.0:
