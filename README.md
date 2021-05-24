@@ -1,5 +1,5 @@
 # SentiSentence
-**A web application that identifies the sentiment behind the user's input sentence and detects possible spelling errors and provides suggestions to correct them.**
+**A web application that identifies the sentiment behind the user's input sentence and detects possible grammatical errors and provides suggestions to correct them.**
 This application makes use of Flask framework and is deployed in heroku in the site : **https://sentisentence.herokuapp.com/**
 
 Authors : Sudha M , Shuruthi V , Keerthana K , Mahalakshmi R , Revathi P
